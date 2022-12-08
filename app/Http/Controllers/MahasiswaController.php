@@ -39,6 +39,8 @@ class MahasiswaController extends Controller
         $model= Mahasiswa::find($nim);
         return view('edit-mahasiswa')->with('post',$model);
     }
+    
+    
     public function update(Request $request, $nim){
         $model= Mahasiswa::find($nim);
         $rules = [
